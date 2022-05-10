@@ -27,7 +27,7 @@
 }
 @media (max-width:500px){
     .swiper-slide{
-        padding-left: 2rem;
+        padding-left: 5rem;
     }
 }
 .swiper-slide a img {

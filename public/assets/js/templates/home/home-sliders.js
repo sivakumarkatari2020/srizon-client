@@ -14,6 +14,7 @@ try{
                                 style="background-image: url(${image_path});
                                     background-repeat:no-repeat;
                                     background-size:cover;
+                                    background-position: center center;
                                     min-height:500px"
                                 >
                                 <div class="slide-content">

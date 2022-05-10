@@ -547,13 +547,13 @@
                 }
 
                 if(result.data?.status !== 200){
-                    toastr.error(result.data?.message);
+                    toastr.error('Unable to add item to your wishlist!! Try later');
                 }else{
                     toastr.success('Added to your wishlist!');
                 }
             } catch (err) {
 				console.log(err);
-				toastr.error('Unable to add item to your wishlist!!');
+				toastr.error('Unable to add item to your wishlist!! Try later');
 			}
         }
     }
@@ -586,13 +586,13 @@
                 }
             
                 if(result.data?.status !== 200){
-                    toastr.error(result.data?.message);
+                    toastr.error('Unable to add item to your cart!!Try later');
                 }else{
                     toastr.success('Added to your cart!');
                 }
             } catch (err) {
                 console.log(err);
-                toastr.error('Unable to add item to your cart!!');
+                toastr.error('Unable to add item to your cart!!Try later');
             }
         }
     }

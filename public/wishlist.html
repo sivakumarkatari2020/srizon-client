@@ -512,7 +512,7 @@
             if(result.status !== 200){
                 toastr.error('Unable to remove item from your Wishlist!!');
             }else{
-                toastr.success(result.message);
+                toastr.success('Successfully removed!!');
                 setTimeout(()=>{
                     window.location.reload();
                 },2000)
@@ -557,7 +557,8 @@
             if(result.status !== 200){
                 toastr.error('Unable to remove items from your Wishlist!!');
             }else{
-                toastr.success(result.message);
+                console.log(result);
+                toastr.success('Successfully removed!!');
                 setTimeout(()=>{
                     window.location.reload();
                 },2000)

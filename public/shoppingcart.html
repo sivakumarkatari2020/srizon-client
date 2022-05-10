@@ -511,7 +511,7 @@
             if(result.status !== 200){
                 toastr.error('Unable to delete this item from your cart!!');
             }else{
-                toastr.success(result.message);
+                toastr.success('Removed successfully!!');
                 setTimeout(()=>{
                     window.location.reload();
                 },2000)
@@ -555,7 +555,7 @@
                 if(result.status !== 200){
                     toastr.error('Unable to delete these items from your cart!!');
                 }else{
-                    toastr.success(result.message);
+                    toastr.success('Removed Successfully!');
                     setTimeout(()=>{
                         window.location.reload();
                     },2000)

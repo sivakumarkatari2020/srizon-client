@@ -6,6 +6,13 @@ const user_id = localStorage.getItem('user_id')
                     ? sessionStorage.getItem('user_id')
                     : 0
 
+const isLoggedIn = localStorage.getItem('isLoggedIn')
+                    ? localStorage.getItem('isLoggedIn')
+                    : sessionStorage.getItem('isLoggedIn')
+                        ? sessionStorage.getItem('isLoggedIn')
+                        : false
+
+
 toastr.options = {
     "closeButton": true,
     "debug": false,
@@ -28,12 +35,12 @@ try{
 
     let result = [];
 
-    if(user_id !== 0){
+    if(user_id !== 0 && isLoggedIn){
         result = await getUserDetailsAPI(user_id);
     }else{
         toastr.error('Something went wrong!!');
         setTimeout(()=>{
-            window.location.href = "/404page.html";
+            window.location.href = "/login.html";
         },2000); 
     }
 

@@ -1,5 +1,5 @@
 const getHomeSliders = async () => {
-    return fetch('http://localhost:8080/api/client/getHomeSliders')
+    return fetch('https://srizon-5fcc1.el.r.appspot.com/api/client/getHomeSliders')
     .then(response => response.json())
     .then(data => data)
     .catch((error)=>{

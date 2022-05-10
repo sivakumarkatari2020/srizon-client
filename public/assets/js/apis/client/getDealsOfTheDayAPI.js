@@ -1,5 +1,5 @@
 const getDealsOfTheDay = async () => {
-    return fetch('http://localhost:8080/api/client/getDealsOfTheDay')
+    return fetch('https://srizon-5fcc1.el.r.appspot.com/api/client/getDealsOfTheDay')
     .then(response => response.json())
     .then(data => data)
     .catch((error)=>{

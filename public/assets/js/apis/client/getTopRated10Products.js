@@ -1,5 +1,5 @@
 const getTopRated10Products = async () => {
-    return fetch('http://localhost:8080/api/client/getTopRated10Products')
+    return fetch('https://srizon-5fcc1.el.r.appspot.com/api/client/getTopRated10Products')
     .then(response => response.json())
     .then(data => data)
     .catch((error)=>{

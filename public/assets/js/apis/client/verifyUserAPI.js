@@ -1,6 +1,6 @@
 async function verifyAPI(params){
 
-    return fetch(`http://localhost:8080/api/login/verify`,
+    return fetch(`https://srizon-5fcc1.el.r.appspot.com/api/login/verify`,
             {
                 method: 'POST',
                 headers: new Headers({

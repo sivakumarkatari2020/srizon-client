@@ -482,7 +482,7 @@
     async function removeCartlistItem(user_id,cartitem_id){
 
         try{
-            const result = await fetch(`http://localhost:8080/api/client/removeCartlistItem/${user_id}/${cartitem_id}`)
+            const result = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/removeCartlistItem/${user_id}/${cartitem_id}`)
                             .then(response => response.json())
                             .then(data => data)
                             .catch((error)=>{
@@ -526,7 +526,7 @@
     async function removeCartlistItems(user_id){
 
         try{
-            const result = await fetch(`http://localhost:8080/api/client/removeCartlistItems/${user_id}`)
+            const result = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/removeCartlistItems/${user_id}`)
                 .then(response => response.json())
                 .then(data => data)
                 .catch((error)=>{

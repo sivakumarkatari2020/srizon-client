@@ -25,7 +25,7 @@ const searchListGenerator = (list) => {
                             <div class="product-thumb">
                                 <div class="thumb-inner">
                                     <a href="/productdetails.html?product_id=${item.id}">
-                                        <img src="${item.image_path}" alt="img-${item.name}">
+                                        <img src="${JSON.parse(item.image_path)?.links[0]}" alt="img-${item.name}">
                                     </a>
                                     <div class="thumb-group">
                                         <div class="yith-wcwl-add-to-wishlist">

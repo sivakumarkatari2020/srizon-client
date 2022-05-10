@@ -26,14 +26,17 @@ toastr.options = {
 const loginAuth = async (user,pass) => {
 
     try{
-        const credentials = {username:user,password:pass}
         butLogin.style.pointerEvents = 'none';
+        butLogin.value = 'Logging...';
+
+        const credentials = {username:user,password:pass}
 
         const result = await verifyAPI(credentials);
     
         if(result.status !== 200){
             toastr.error(result.message);
             butLogin.style.pointerEvents = 'all';
+            butLogin.value = "Login";
         }else{
             toastr.success('Logged In Successfully!!')
             if(chkBox.checked){
@@ -56,6 +59,8 @@ const loginAuth = async (user,pass) => {
         }
     } catch (err) {
         console.log(err);
+        butLogin.style.pointerEvents = 'all';
+        butLogin.value = "Login";
         toastr.error(err.message);
     }
 }

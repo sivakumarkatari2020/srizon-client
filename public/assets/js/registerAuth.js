@@ -28,11 +28,15 @@ const registerAuth = async (mail,u_name,pass) => {
 
     try{
         const details = {'email':mail,'username':u_name,'password':pass}
-    
+        btnRegister.style.pointerEvents = 'none';
+        btnRegister.value = 'Loading...';
+
         const result = await registerAPI(details);
 
         if(result?.status !== 200){
             toastr.error(result.message);
+            btnRegister.style.pointerEvents = 'all';
+            btnRegister.value = 'Register Now';    
         }else{
             toastr.success(result.message);
             email.value = '';
@@ -47,6 +51,8 @@ const registerAuth = async (mail,u_name,pass) => {
 
     } catch (error) {
         console.log(err);
+        btnRegister.style.pointerEvents = 'all';
+        btnRegister.value = 'Register Now';    
         toastr.error(err.message);
     }
 }

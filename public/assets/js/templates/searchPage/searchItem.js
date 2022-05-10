@@ -13,7 +13,7 @@ try{
 
         if(searchStr.trim().length > 2){
             btn.style.pointerEvents = 'all';
-            btn.style.backgroundColor = '#007fff';
+            btn.style.backgroundColor = '#7f87ab';
         }else{
             btn.style.pointerEvents = 'none';
             btn.style.backgroundColor = '#c6c6c6';

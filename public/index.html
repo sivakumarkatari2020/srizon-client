@@ -577,16 +577,20 @@
 
 <!-- Swiper CDN -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script async type="module" src="assets/js/templates/home/home-sliders.js"></script>
 <script>
     //  Initialize Swiper
     let swiper = new Swiper(".mySwiper", {
+        autoplay: {
+            delay: 2000,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            prevEl: ".swiper-button-prev"
         },
     }); 
 </script>
@@ -615,7 +619,6 @@
 </script>
 
 <!-- javascript templates for homepage -->
-<script type="module" src="assets/js/templates/home/home-sliders.js"></script>
 <script type="module" src="assets/js/templates/home/category-list-nav.js"></script>
 <script type="module" src="assets/js/templates/home/deals-of-the-day.js"></script>
 <script type="module" src="assets/js/templates/home/wrapp-banner-small.js"></script>

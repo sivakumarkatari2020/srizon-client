@@ -7159,7 +7159,7 @@ body.vertical-menu-open .vertical-menu-overlay {
 	top: 0;
 	left: 0;
 	z-index: 99;
-	background: #090909;
+	background: #909090;
 	min-height: 100vh;
 	bottom: 0;
 	max-width: 100%

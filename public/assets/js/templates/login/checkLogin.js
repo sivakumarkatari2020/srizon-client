@@ -14,8 +14,8 @@ const isLoggedIn = localStorage.getItem('isLoggedIn')
 
 profileButton.addEventListener("click",() => {
     if(isLoggedIn && user_id !== 0){
-        window.location.replace("http://127.0.0.1:5500/public/profile.html")
+        window.location.href = "/profile.html"
     }else{
-        window.location.replace("http://127.0.0.1:5500/public/login.html")
+        window.location.href = "/login.html";
     }
 })

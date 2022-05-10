@@ -19,13 +19,13 @@ const templateGenerator = (item) => {
             <a href="javascript:void(0)" class="remove" onclick="removeWishlistItem(${item.user_id},${item.id})"></a>
         </td>
         <td class="product-thumbnail">
-            <a href="/public/productdetails.html?product_id=${item.product_id}">
+            <a href="/productdetails.html?product_id=${item.product_id}">
                 <img src="${JSON.parse(item.product_details.image_path).links[0]}" alt="img-${item.product_details.name}"
                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
             </a>
         </td>
         <td class="product-name" data-title="Product">
-            <a href="/public/productdetails.html?product_id=${item.product_id}" class="title">${item.product_details.name}</a>
+            <a href="/productdetails.html?product_id=${item.product_id}" class="title">${item.product_details.name}</a>
             <span class="attributes-select attributes-color">${item.color}</span>
             <span class="attributes-select attributes-size">${item.size}</span>
             ${
@@ -54,7 +54,7 @@ const templateGenerator = (item) => {
 
 if(user_id === 0 && !isLoggedIn){
 
-    window.location.href = "/public/login.html";
+    window.location.href = "/login.html";
 
 }else{
     try{
@@ -74,14 +74,14 @@ if(user_id === 0 && !isLoggedIn){
                 htmlTemplate = `<br />
                                 <p style="text-align:center">Your list is empty!!</p>
                                 <p style="text-align:center">Explore our 
-                                    <a href="/public/index.html" style="text-decoration:underline;color:blue">home page</a> 
+                                    <a href="/index.html" style="text-decoration:underline;color:blue">home page</a> 
                                 for best deals and products!</p>`;
             }
         
             document.getElementById('wishListProducts').innerHTML = htmlTemplate;
     
         }else{
-            window.location='/public/404page.html';
+            window.location='/404page.html';
         }
     
     } catch (err) {

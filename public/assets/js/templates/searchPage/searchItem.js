@@ -22,7 +22,7 @@ try{
 
     btn.addEventListener('click',(e)=>{
         e.preventDefault();
-        window.location = `/public/search.html?squery=${searchStr}`;
+        window.location = `/search.html?squery=${searchStr}`;
     })
 } catch (error) {
     console.log(error);

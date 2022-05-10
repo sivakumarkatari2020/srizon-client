@@ -26,7 +26,7 @@ try{
                 </div>
                 <div class="product-thumb">
                     <div class="thumb-inner">
-                        <a href="/public/productdetails.html?product_id=${id}">
+                        <a href="/productdetails.html?product_id=${id}">
                             <img src='${image.links[0]}' alt="img-${name}" style="width:100%;height:250px;object-fit:contain;">
                         </a>
                         <div class="thumb-group">
@@ -44,7 +44,7 @@ try{
                 </div>
                 <div class="product-info">
                     <h5 class="product-name product_title">
-                        <a href="/public/productdetails.html?product_id=${id}">${name}</a>
+                        <a href="/productdetails.html?product_id=${id}">${name}</a>
                     </h5>
                     <div class="group-info">
                         <div class="stars-rating">

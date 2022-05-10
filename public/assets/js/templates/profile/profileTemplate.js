@@ -33,7 +33,7 @@ try{
     }else{
         toastr.error('Something went wrong!!');
         setTimeout(()=>{
-            window.location.href = "/public/404page.html";
+            window.location.href = "/404page.html";
         },2000); 
     }
 
@@ -105,7 +105,7 @@ try{
             sessionStorage.removeItem("session_token");
 
             setTimeout(()=>{
-                window.location.href="/public/login.html";
+                window.location.href="/login.html";
             },2000);
         }
     }
@@ -141,7 +141,7 @@ try{
                         </p>
                         <p class="form-row form-row-last">
                             <label class="text"><span style="color:rgba(0,0,0,0.5);">Want to reset passowrd?</span></label>
-                            <a href="/public/passwordChange.html" style="text-decoration:underline;color:blue;">Click here</a>
+                            <a href="/passwordChange.html" style="text-decoration:underline;color:blue;">Click here</a>
                         </p>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ try{
         </div>
         <div class="button-box">
             <button id="logoutBut">Logout</button>
-            <button><a href="/public/myOrders.html" style="color:#fff">Manage Orders</a></button>
+            <button><a href="/myOrders.html" style="color:#fff">Manage Orders</a></button>
         </div>
         `
     }
@@ -166,10 +166,10 @@ try{
     }else{
         toastr.error('Something went wrong!!');
         setTimeout(()=>{
-            window.location.href = "/public/404page.html";
+            window.location.href = "/404page.html";
         },2000); 
     }
 } catch (error) {
     console.log(error);
-    window.location.href = "/public/404page.html";
+    window.location.href = "/404page.html";
 }

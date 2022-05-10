@@ -50,7 +50,7 @@ const loginAuth = async (user,pass) => {
             chkBox.checked = false;
 
             setTimeout(()=>{
-                if(history.length < 3) window.location.href = "/public/index.html";
+                if(history.length < 3) window.location.href = "/index.html";
                 else history.go(-1);
             },2000);
         }

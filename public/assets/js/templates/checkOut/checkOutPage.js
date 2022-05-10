@@ -127,13 +127,13 @@ try{
                     <ul class="list-product-order">
                         <li class="product-item-order">
                             <div class="product-thumb">
-                                <a href="/public/productdetails.html?product_id=${item.id}">
+                                <a href="/productdetails.html?product_id=${item.id}">
                                     <img src="${JSON.parse(item.image_path).links[0]}" alt="img-${item.name}">
                                 </a>
                             </div>
                             <div class="product-order-inner">
                                 <h5 class="product-name">
-                                    <a href="/public/productdetails.html?product_id=${item.id}">${item.name}</a>
+                                    <a href="/productdetails.html?product_id=${item.id}">${item.name}</a>
                                 </h5>
                                 <span class="attributes-select attributes-color">${item.inventory_details['color-list']}</span>
                                 <span class="attributes-select attributes-size">${item.inventory_details['size-list']}</span>
@@ -157,7 +157,7 @@ try{
             console.log(err);
             toastr.error('Unable to proceed!!Redirecting to Home');
             setTimeout(()=>{
-                window.location.href = "/public/404page.html";
+                window.location.href = "/404page.html";
             },2000);
             return null;
         }
@@ -263,7 +263,7 @@ try{
                         if(res.signatureIsValid){
                             toastr.success("Payment Successfully completed!!");
                             setTimeout(()=>{
-                                window.location.href='/public/orderSuccess.html';
+                                window.location.href='/orderSuccess.html';
                             },2000);
                         }else{
                             toastr.error("Payment is not Authorized");
@@ -317,7 +317,7 @@ try{
     }
 
     if(user_id === 0 && !isLoggedIn){
-        window.location.href = "/public/login.html";
+        window.location.href = "/login.html";
     }else{
         try{
             document.getElementById('order-preview').innerHTML = previewTemplate(result[0]);
@@ -329,7 +329,7 @@ try{
             toastr.error('Unable to proceed!!');
 
             setTimeout(()=>{
-                window.location.href = "/public/404page.html";
+                window.location.href = "/404page.html";
             },2000);
         }
     }
@@ -338,6 +338,6 @@ try{
     toastr.error('Unable to load the page,server problem!!');
 
     setTimeout(()=>{
-        window.location.href = "/public/404page.html";
+        window.location.href = "/404page.html";
     },2000);
 }

@@ -28,7 +28,7 @@ function suggestionTemplateGenerator(item){
                     </div>
                     <div class="product-thumb">
                         <div class="thumb-inner">
-                            <a href="/public/productdetails.html?product_id=${item.id}">
+                            <a href="/productdetails.html?product_id=${item.id}">
                                 <img src='${image.links[0]}' alt="img-${item.name}" style="width:100%;height:250px;object-fit:contain;">
                             </a>
                             <div class="thumb-group">
@@ -46,7 +46,7 @@ function suggestionTemplateGenerator(item){
                     </div>
                     <div class="product-info">
                         <h5 class="product-name product_title">
-                            <a href="/public/productdetails.html?product_id=${item.id}">${item.name}</a>
+                            <a href="/productdetails.html?product_id=${item.id}">${item.name}</a>
                         </h5>
                         <div class="group-info">
                             <div class="stars-rating">
@@ -119,7 +119,7 @@ try{
                                 </div>
                             
                                 <div class="product-preview image-small product_preview swiper mySwiper" style="max-height:500px;">
-                                    <div id="thumbnails" class="swiper-wrapper">
+                                    <!-- <div id="thumbnails" class="swiper-wrapper">
                                         ${
                                             image.links.map(image => 
                                                 `
@@ -133,6 +133,7 @@ try{
                                         }
                                     </div>
                                     <div class="swiper-pagination"></div>
+                                    -->
                                 </div>
                             </div>
                             <div class="details-infor">
@@ -212,7 +213,7 @@ try{
                                                 <button class="single_add_to_cart_button button" onclick="addToCart(${result[0].id},${user_id})">Add to cart</button>
                                             </div>
                                             <div class="quantity-add-to-cart">
-                                                <button class="single_add_to_cart_button button"><a href="/public/checkout.html?product_id=${result[0].id}" style="color:#fff;">Order now!</a></button>
+                                                <button class="single_add_to_cart_button button"><a href="/checkout.html?product_id=${result[0].id}" style="color:#fff;">Order now!</a></button>
                                             </div>
                                         </div>
                                     </div>`
@@ -298,7 +299,7 @@ try{
         }
         document.getElementById('suggestionProducts').innerHTML = suggestionsTemplate;    
     }else{
-        window.location='/public/404page.html';
+        window.location='/404page.html';
     }
 
 } catch (err) {
@@ -309,7 +310,7 @@ try{
             <br />
             <p style="width:100%;opacity:0.7;text-align:center;">/--(+ - +)--/</p>
             <p style="width:100%;opacity:0.7;text-align:center;">we are experiencing a problem</p>
-            <p style="width:100%;opacity:0.7;text-align:center;">return to <a href="/public/index.html" style="opacity:1;text-decoration:underline;color:blue;">home</a></p>
+            <p style="width:100%;opacity:0.7;text-align:center;">return to <a href="/index.html" style="opacity:1;text-decoration:underline;color:blue;">home</a></p>
             <br />
             <br />
     `;

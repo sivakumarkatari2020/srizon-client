@@ -34,7 +34,7 @@ try{
     }else{
         toastr.error('Something went wrong!!');
         setTimeout(()=>{
-            window.location.href = "/public/404page.html";
+            window.location.href = "/404page.html";
         },2000); 
     }
 
@@ -110,13 +110,13 @@ try{
             <ul class="list-product-order">
                 <li class="product-item-order">
                     <div class="product-thumb">
-                        <a href="/public/productdetails.html?product_id=${item.product_id}">
+                        <a href="/productdetails.html?product_id=${item.product_id}">
                             <img src="${JSON.parse(item.product_details.image_path).links[0]}" alt="img-${item.product_details.name}">
                         </a>
                     </div>
                     <div class="product-order-inner">
                         <h5 class="product-name">
-                            <a href="/public/productdetails.html?product_id=${item.product_id}">${item.product_details.name}</a>
+                            <a href="/productdetails.html?product_id=${item.product_id}">${item.product_details.name}</a>
                             <span class="count">x${item.quantity}</span>
                         </h5>
                         <span class="attributes-select attributes-color">${item.product_details.inventory_details["color-list"]}</span>
@@ -192,7 +192,7 @@ try{
                 htmlTemplate = htmlTemplate + ordersTemplate(result[i]);
             }
         }else{
-            htmlTemplate = "<p>You're not ordered anything yet, go to <a href='/public/indexe.html'>Home</a></p>"
+            htmlTemplate = "<p>You're not ordered anything yet, go to <a href='/indexe.html'>Home</a></p>"
         }
 
         document.getElementById("orderList").innerHTML = htmlTemplate;
@@ -210,10 +210,10 @@ try{
     }else{
         toastr.error('Something went wrong!!');
         setTimeout(()=>{
-            window.location.href = "/public/404page.html";
+            window.location.href = "/404page.html";
         },2000); 
     }
 } catch (error) {
     console.log(error);
-    window.location.href = "/public/404page.html";
+    window.location.href = "/404page.html";
 }

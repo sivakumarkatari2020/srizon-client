@@ -25,7 +25,7 @@ const productListGenerator = (list) => {
                             </div>
                             <div class="product-thumb">
                                 <div class="thumb-inner" style="min-height:250px">
-                                    <a href="/public/productdetails.html?product_id=${item.id}">
+                                    <a href="/productdetails.html?product_id=${item.id}">
                                         <img src='${image.links[0]}' alt="img-${item.name}" style="width:100%;height:250px;object-fit:contain;">
                                     </a>
                                     <div class="thumb-group">
@@ -43,7 +43,7 @@ const productListGenerator = (list) => {
                             </div>
                             <div class="product-info">
                                 <h5 class="product-name product_title">
-                                    <a href="/public/productdetails.html?product_id=${item.id}">${item.name}</a>
+                                    <a href="/productdetails.html?product_id=${item.id}">${item.name}</a>
                                 </h5>
                                 <div class="group-info">
                                     <div class="stars-rating">
@@ -171,7 +171,7 @@ try{
         templateGenerator(result);
     }
     else if(result.status === 404){
-        window.location='/public/404page.html';
+        window.location='/404page.html';
     }
     else{
         document.getElementById('productsList').innerHTML = `<center><p>No products in this category!!</p></center>`;

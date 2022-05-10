@@ -460,7 +460,7 @@
 <script>
     async function addToWishlist(product_id,user_id,quantity){
         if(user_id === 0){
-            window.location.href = "/public/login.html";
+            window.location.href = "/login.html";
         }else{
             try{
                 const result = await axios.post('http://localhost:8080/api/client/addToWishlist',{product_id,user_id,quantity})

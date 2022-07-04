@@ -480,7 +480,7 @@
     async function removeWishlistItem(user_id,wishList_id){
 
         try{
-            const result = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/removeWishlistItem/${user_id}/${wishList_id}`)
+            const result = await fetch(`https://srizon-uplink.el.r.appspot.com/api/client/removeWishlistItem/${user_id}/${wishList_id}`)
                             .then(response => response.json())
                             .then(data => data)
                             .catch((error)=>{
@@ -525,7 +525,7 @@
     async function removeWishlistItems(user_id){
 
         try{
-            const result = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/removeWishlistItems/${user_id}`)
+            const result = await fetch(`https://srizon-uplink.el.r.appspot.com/api/client/removeWishlistItems/${user_id}`)
                             .then(response => response.json())
                             .then(data => data)
                             .catch((error)=>{

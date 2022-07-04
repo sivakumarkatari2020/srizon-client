@@ -54,7 +54,7 @@ try{
 
     const createOrder = async (values) => {
 
-        const result = fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/create/orderId`,
+        const result = fetch(`https://srizon-uplink.el.r.appspot.com/api/client/create/orderId`,
                 {
                     method: 'POST',
                     headers: new Headers({
@@ -76,7 +76,7 @@ try{
 
     const verifyPayment = async (values) => {
 
-        const result = fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/payment/verify`,
+        const result = fetch(`https://srizon-uplink.el.r.appspot.com/api/client/payment/verify`,
                 {
                     method: 'POST',
                     headers: new Headers({
@@ -98,7 +98,7 @@ try{
 
     const restoreQuantity = async (values) => {
 
-        const result = fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/restore/quantity`,
+        const result = fetch(`https://srizon-uplink.el.r.appspot.com/api/client/restore/quantity`,
                 {
                     method: 'POST',
                     headers: new Headers({

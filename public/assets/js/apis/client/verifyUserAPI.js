@@ -1,6 +1,6 @@
 async function verifyAPI(params){
 
-    return fetch(`https://srizon-5fcc1.el.r.appspot.com/api/login/verify`,
+    return fetch(`https://srizon-uplink.el.r.appspot.com/api/login/verify`,
             {
                 method: 'POST',
                 headers: new Headers({

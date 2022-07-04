@@ -653,7 +653,7 @@
             window.location.href = "/login.html";
         }else{
             try{
-                const result = await axios.post('https://srizon-5fcc1.el.r.appspot.com/api/client/addToWishlist',{product_id,user_id,quantity})
+                const result = await axios.post('https://srizon-uplink.el.r.appspot.com/api/client/addToWishlist',{product_id,user_id,quantity})
                 .then(response => response)
                 .catch(err => console.log(err))
 

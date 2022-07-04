@@ -66,7 +66,7 @@ try{
 
             saveButton.style.pointerEvents = 'none';
 
-            const res = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/updateUser`,
+            const res = await fetch(`https://srizon-uplink.el.r.appspot.com/api/client/updateUser`,
                 {
                     method: 'POST',
                     headers: new Headers({

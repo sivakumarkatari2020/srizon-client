@@ -1,5 +1,5 @@
 const getWrappBanners = async () => {
-    return fetch('https://srizon-5fcc1.el.r.appspot.com/api/client/getWrappBanners')
+    return fetch('https://srizon-uplink.el.r.appspot.com/api/client/getWrappBanners')
     .then(response => response.json())
     .then(data => data)
     .catch((error)=>{

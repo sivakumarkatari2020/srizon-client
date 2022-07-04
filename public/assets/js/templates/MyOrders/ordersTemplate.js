@@ -48,7 +48,7 @@ try{
             toastr.error("Please enter some text in review box before saving!!");
             return;
         }else{
-            const result = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/review/new`,
+            const result = await fetch(`https://srizon-uplink.el.r.appspot.com/api/client/review/new`,
                 {
                     method: 'POST',
                     headers: new Headers({
@@ -84,7 +84,7 @@ try{
         e.preventDefault();
 
         if(window.confirm("Are you sure to cancel this order??")){
-            const res = await fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/cancelOrder/${e.target.name}`)
+            const res = await fetch(`https://srizon-uplink.el.r.appspot.com/api/client/cancelOrder/${e.target.name}`)
                             .then(response => response.json())
                             .then(data => data)
                             .catch((error)=>{

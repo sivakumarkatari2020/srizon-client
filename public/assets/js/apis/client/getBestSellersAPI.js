@@ -1,5 +1,5 @@
 const getBestSellers = async () => {
-    return fetch('https://srizon-5fcc1.el.r.appspot.com/api/client/getBestSellers')
+    return fetch('https://srizon-uplink.el.r.appspot.com/api/client/getBestSellers')
     .then(response => response.json())
     .then(data => data)
     .catch((error)=>{

@@ -1,6 +1,6 @@
 async function addToWishlistAPI(params){
 
-    return fetch(`https://srizon-5fcc1.el.r.appspot.com/api/client/addToWishlist`,
+    return fetch(`https://srizon-uplink.el.r.appspot.com/api/client/addToWishlist`,
             {
                 method: 'POST',
                 headers: new Headers({

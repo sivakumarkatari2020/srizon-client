@@ -1,6 +1,6 @@
 async function registerAPI(params){
 
-    return fetch(`https://srizon-5fcc1.el.r.appspot.com/api/register/new`,
+    return fetch(`https://srizon-uplink.el.r.appspot.com/api/register/new`,
             {
                 method: 'POST',
                 headers: new Headers({
